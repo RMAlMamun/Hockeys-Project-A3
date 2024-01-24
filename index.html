@@ -6,21 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey’s</title>
     <link rel="stylesheet" href="style.css">
+
     <!-- tailwind and Daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Tailwind custom color -->
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        clifford: '#FFFFFF',
-                    }
-                }
-            }
-        }
-    </script>
+
     <!-- manrope Google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -48,7 +38,7 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a class="theme-color">Home</a></li>
+                            <li><a class="primary-color">Home</a></li>
                             <li><a>About</a></li>
                             <li><a>Pages</a></li>
                             <li><a>Blog</a></li>
@@ -56,11 +46,11 @@
                         </ul>
                     </div>
                     <a class="btn btn-ghost text-2xl md:text-4xl font-extrabold ">Hockey<div
-                            class="theme-color -mr-3 -ml-2">’</div>s</a>
+                            class="primary-color -mr-3 -ml-2">’</div>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1 font-bold text-base">
-                        <li><a class="theme-color">Home</a></li>
+                        <li><a class="primary-color">Home</a></li>
                         <li><a>About</a></li>
                         <li><a>Pages</a></li>
                         <li><a>Blog</a></li>
@@ -75,7 +65,7 @@
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <a class="btn lg:text-xl font-bold theme-bg text-white">Get Ticket</a>
+                    <a class="btn lg:text-xl font-bold btn-bg text-white">Get Ticket</a>
                 </div>
             </div>
             <div class="relative">
@@ -172,10 +162,174 @@
             </div>
         </section>
 
+        <section>
+            <div class="container mx-auto py-10">
+                <hr class="border-dashed border-1 h-0">
+                <div class="space-y-3 text-center py-5">
+                    <h2 class="text-xl md:text-4xl text-black font-extrabold">
+                        Program Sections
+                    </h2>
+                    <p class="text-sm md:text-base font-medium p-black max-w-[607px] mx-auto">
+                        Explore diverse program sections designed to cater to varied interests and ensure holistic skill
+                        development for all.
+                    </p>
+                </div>
+                <hr class="border-dashed border-1 h-0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-7 ">
+                    <div class="relative text-white">
+                        <div class="bg-black rounded-xl w-full h-full">
+                            <img src="Images/2.png" alt="" class="w-full h-full min-h-[244px] opacity-50">
+                        </div>
+                        <div class="absolute left-0 bottom-0 lg:bottom-5 lg:left-5 space-y-3 p-5">
+                            <h2 class="text-xl lg:text-3xl font-extrabold">
+                                Junior Program
+                            </h2>
+                            <p class="text-sm md:text-base font-medium max-w-[520px]">
+                                Empowering young athletes through our junior program, fostering skills, teamwork, and a
+                                passion for the game. Join us on this exciting journey of growth and achievement.
+                            </p>
+                            <button class="btn btn-bg text-white font-extrabold lg:text-xl">
+                                Register Now!
+                            </button>
+                        </div>
+                    </div>
+                    <div class="relative text-white">
+                        <div class="bg-black rounded-xl w-full h-full ">
+                            <img src="Images/3.png" alt="" class="w-full h-full min-h-[244px] opacity-50">
+                        </div>
+                        <div class="absolute left-0 bottom-0 lg:bottom-5 lg:left-5 space-y-3 p-5">
+                            <h2 class="text-xl lg:text-3xl font-extrabold">
+                                Teenager Program
+                            </h2>
+                            <p class="text-sm md:text-base font-medium max-w-[520px]">
+                                Nurturing potential in our teenager program, combining skill development, mentorship,
+                                and teamwork to empower young players. Join us for an enriching experience on and off
+                                the ice."
+                            </p>
+                            <button class="btn btn-bg text-white font-extrabold lg:text-xl">
+                                Register Now!
+                            </button>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-2 relative text-white">
+                        <div class="bg-black rounded-xl w-full h-full">
+                            <img src="Images/4.png" alt="" class="w-full h-full min-h-[244px] opacity-50">
+                        </div>
+                        <div class="absolute left-0 bottom-0 lg:bottom-5 lg:left-5  space-y-3 p-5">
+                            <h2 class="text-xl lg:text-3xl font-extrabold">
+                                Professional Program
+                            </h2>
+                            <p class="text-sm md:text-base font-medium max-w-[520px]">
+                                Elevate your game with our professional program, tailored for elite athletes. Expert
+                                coaching, advanced training, and a winning mindset converge to propel you toward
+                                unparalleled success in your career.
+                            </p>
+                            <button class="btn btn-bg text-white font-extrabold lg:text-xl">
+                                Register Now!
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
 
     </main>
-    <footer>
+    <footer class="bg-black text-white p-5 lg:p-12 mt-12">
+        <div class="container">
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-5">
+                <div class="space-y-5 lg:col-span-2 text-center lg:text-start">
+                    <div>
+                        <h2 class="text-3xl font-extrabold">
+                            Get In Touch
+                        </h2>
+                        <p class="lg:max-w-[346px] p-white">
+                            Contact us anytime. We welcome your messages, inquiries, and feedback. Let's stay connected
+                            and make things happen together!
+                        </p>
+                        <p class="lg:max-w-[346px]">
+                            <span class="text-red-600 mr-5"><i class="fa-solid fa-envelope"></i></span> <span
+                                class="p-white-2">hockeys@support.com</span> <br>
+                            <span class="text-red-600  mr-5"><i class="fa-solid fa-phone"></i></span><span
+                                class="p-white-2">
+                                (+62) 123-321-543
+                            </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="flex justify-between lg:justify-evenly lg:col-span-2">
+                    <div>
+                        <h3 class="text-xl font-extrabold mb-6">
+                            Company
+                        </h3>
+                        <ul class="space-x-1  p-white">
+                            <a href="#">
+                                <li>About us</li>
+                            </a>
+                            <a href="#">
+                                <li>Leadership </li>
+                            </a>
+                            <a href="#">
+                                <li>Careers </li>
+                            </a>
+                            <a href="#">
+                                <li>BloNews & Articleg</li>
+                            </a>
+                            <a href="#">
+                                <li>Legal Notice</li>
+                            </a>
+                        </ul>
+                    </div>
 
+                    <div>
+                        <div>
+                            <h3 class="text-xl font-extrabold mb-6">
+                                Support
+                            </h3>
+                            <ul class="space-x-1  p-white">
+                                <a href="#">
+                                    <li>Help Center</li>
+                                </a>
+                                <a href="#">
+                                    <li>FAQ </li>
+                                </a>
+                                <a href="#">
+                                    <li> Ticket Support</li>
+                                </a>
+                                <a href="#">
+                                    <li> Contact Us</li>
+                                </a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center">
+                    <div>
+                        <h3 class="text-xl font-extrabold mb-6">
+                            Services
+                        </h3>
+                        <ul class="space-x-1 p-white">
+                            <a href="#">
+                                <li>Academy</li>
+                            </a>
+                            <a href="#">
+                                <li>Group Lesson</li>
+                            </a>
+                            <a href="#">
+                                <li>Private Lesson</li>
+                            </a>
+                            <a href="#">
+                                <li> Hockeys for kids</li>
+                            </a>
+                            <a href="#">
+                                <li>Hockeys for Adult</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
 </body>
