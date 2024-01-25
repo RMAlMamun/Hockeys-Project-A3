@@ -1,11 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hockey’s</title>
     <link rel="stylesheet" href="style.css">
+    <!-- tailwind custom color  -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
 
     <!-- tailwind and Daisy ui -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -65,7 +77,7 @@
                                 d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                         </svg>
                     </button>
-                    <a class="btn lg:text-xl font-bold btn-bg text-white">Get Ticket</a>
+                    <a class="btn lg:text-xl font-bold btn-error text-white">Get Ticket</a>
                 </div>
             </div>
             <div class="relative">
@@ -92,8 +104,8 @@
                         Meet all the heroes from the field
                     </h3>
                     <p class="max-w-[502px] font-medium p-white text-sm md:text-base">
-                        Discover field heroes, brave and inspiring, shaping a world of courage, determination, and
-                        remarkable achievements. Join them now!
+                        These athletes exemplify resilience, teamwork, and a passion for the game, inspiring us with
+                        their remarkable abilities and dedication to their sport. Join them now!
                     </p>
                 </div>
             </div>
@@ -108,8 +120,8 @@
                         Professional Hockeys Club
                     </h2>
                     <p class="text-sm md:text-base font-medium p-black max-w-[607px] mx-auto">
-                        Elite hockey club for professionals, uniting skill, passion, and teamwork. Join us for an
-                        exhilarating journey on ice!
+                        These athletes embody teamwork, precision, and a relentless passion for the game, earning their
+                        status as true heroes of the rink.
                     </p>
                 </div>
                 <hr class="border-dashed border-1 h-0">
@@ -170,12 +182,12 @@
                         Program Sections
                     </h2>
                     <p class="text-sm md:text-base font-medium p-black max-w-[607px] mx-auto">
-                        Explore diverse program sections designed to cater to varied interests and ensure holistic skill
-                        development for all.
+                        Dive into diverse insights and expertise with our Program Sections—a journey through curated
+                        knowledge, innovation, and inspiration for every interest.
                     </p>
                 </div>
                 <hr class="border-dashed border-1 h-0">
-                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-7 ">
+                <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2 gap-7  py-10">
                     <div class="relative text-white">
                         <div class="bg-black rounded-xl w-full h-full">
                             <img src="Images/2.png" alt="" class="w-full h-full min-h-[244px] opacity-50">
@@ -185,10 +197,10 @@
                                 Junior Program
                             </h2>
                             <p class="text-sm md:text-base font-medium max-w-[520px]">
-                                Empowering young athletes through our junior program, fostering skills, teamwork, and a
-                                passion for the game. Join us on this exciting journey of growth and achievement.
+                                Where young dreams lace up and aspirations take the ice. The Junior Hockey Program:
+                                Cultivating skills, camaraderie, and a passion for the game.
                             </p>
-                            <button class="btn btn-bg text-white font-extrabold lg:text-xl">
+                            <button class="btn btn-error text-white font-extrabold lg:text-xl">
                                 Register Now!
                             </button>
                         </div>
@@ -202,11 +214,10 @@
                                 Teenager Program
                             </h2>
                             <p class="text-sm md:text-base font-medium max-w-[520px]">
-                                Nurturing potential in our teenager program, combining skill development, mentorship,
-                                and teamwork to empower young players. Join us for an enriching experience on and off
-                                the ice."
+                                Elevate your game, ignite your passion. The Teen Hockey Program: Where skills meet
+                                strategy, and camaraderie scores unforgettable victories.
                             </p>
-                            <button class="btn btn-bg text-white font-extrabold lg:text-xl">
+                            <button class="btn btn-error text-white font-extrabold lg:text-xl">
                                 Register Now!
                             </button>
                         </div>
@@ -220,11 +231,10 @@
                                 Professional Program
                             </h2>
                             <p class="text-sm md:text-base font-medium max-w-[520px]">
-                                Elevate your game with our professional program, tailored for elite athletes. Expert
-                                coaching, advanced training, and a winning mindset converge to propel you toward
-                                unparalleled success in your career.
+                                Elite training, precision plays, and the pursuit of excellence define our Professional
+                                Hockey Program—where champions are crafted on the ice.
                             </p>
-                            <button class="btn btn-bg text-white font-extrabold lg:text-xl">
+                            <button class="btn btn-error text-white font-extrabold lg:text-xl">
                                 Register Now!
                             </button>
                         </div>
@@ -234,7 +244,409 @@
             </div>
         </section>
 
+        <section>
+            <div class="container mx-auto py-10">
+                <hr class="border-dashed border-1 h-0">
+                <div class="spac e-y-3 text-center py-5">
+                    <h2 class="text-xl md:text-4xl text-black font-extrabold">
+                        Our New Products
+                    </h2>
+                    <p class="text-sm md:text-base font-medium p-black max-w-[607px] mx-auto">
+                        Explore cutting-edge innovation in our new hockey-related products. From advanced gear to
+                        tech-infused equipment, elevate your performance and experience the future of the game.
+                    </p>
+                </div>
+                <hr class="border-dashed border-1 h-0">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-10  py-10">
+                    <div class="hero border-2 rounded-lg">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/5.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="p-black flex gap-5 font-medium">
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-400"></i> 5.0
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye"></i> 20
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart"></i> 200
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold">Stylish Jacket</h1>
+                                <p class="py-6 p-black  text-base">Sleek design, premium comfort—our Stylish Hockey
+                                    Jacket redefines on-ice fashion.
+                                </p>
+                                <div class="p-black flex-col md:flex-row flex gap-5">
+                                    <div class="primary-color text-lg font-extrabold">
+                                        Price - $22.00
+                                    </div>
+                                    <div class="font-medium">
+                                        <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+                                    </div>
 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero border-2 rounded-lg">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/6.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="p-black flex gap-5 font-medium">
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-400"></i> 5.0
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye"></i> 20
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart"></i> 200
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold">Falcon Icon Football</h1>
+                                <p class="py-6 p-black  text-base">Unleash precision and power with the Falcon Icon
+                                    Football's advanced design.
+                                </p>
+                                <div class="p-black  flex-col md:flex-row flex gap-5">
+                                    <div class="primary-color text-lg font-extrabold">
+                                        Price - $22.00
+                                    </div>
+                                    <div class="font-medium">
+                                        <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero border-2 rounded-lg">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/7.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="p-black flex gap-5 font-medium">
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-400"></i> 5.0
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye"></i> 20
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart"></i> 200
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold">Cap For Hockeys</h1>
+                                <p class="py-6 p-black  text-base">Exclusive hockey-themed caps for ultimate style on
+                                    and off the rink.
+                                </p>
+                                <div class="p-black  flex-col md:flex-row flex gap-5">
+                                    <div class="primary-color text-lg font-extrabold">
+                                        Price - $22.00
+                                    </div>
+                                    <div class="font-medium">
+                                        <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero border-2 rounded-lg">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/8.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="p-black flex gap-5 font-medium">
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-400"></i> 5.0
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye"></i> 20
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart"></i> 200
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold">Stylish Sports T-shirt</h1>
+                                <p class="py-6 p-black  text-base">Performance meets style in our chic Stylish Sports
+                                    T-shirt collection
+                                </p>
+                                <div class="p-black  flex-col md:flex-row flex gap-5">
+                                    <div class="primary-color text-lg font-extrabold">
+                                        Price - $22.00
+                                    </div>
+                                    <div class="font-medium">
+                                        <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero border-2 rounded-lg">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/9.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="p-black flex gap-5 font-medium">
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-400"></i> 5.0
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye"></i> 20
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart"></i> 200
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold">Outstanding Hockey Helmet</h1>
+                                <p class="py-6 p-black  text-base">Optimal protection, sleek design—our Hockey Helmet
+                                    redefines safety on the ice
+                                </p>
+                                <div class="p-black  flex-col md:flex-row flex gap-5">
+                                    <div class="primary-color text-lg font-extrabold">
+                                        Price - $22.00
+                                    </div>
+                                    <div class="font-medium">
+                                        <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hero border-2 rounded-lg">
+                        <div class="hero-content flex-col lg:flex-row">
+                            <img src="Images/10.png" class="max-w-sm rounded-lg" />
+                            <div>
+                                <div class="p-black flex gap-5 font-medium">
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-400"></i> 5.0
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-eye"></i> 20
+                                    </div>
+                                    <div>
+                                        <i class="fa-regular fa-heart"></i> 200
+                                    </div>
+                                </div>
+                                <h1 class="text-xl font-extrabold">Casual Football</h1>
+                                <p class="py-6 p-black  text-base">Relaxed style, game-ready comfort—our Casual Football
+                                    is sporty everyday wear.
+                                </p>
+                                <div class="p-black  flex-col md:flex-row flex gap-5">
+                                    <div class="primary-color text-lg font-extrabold">
+                                        Price - $22.00
+                                    </div>
+                                    <div class="font-medium">
+                                        <i class="fa-solid fa-cart-shopping"></i> Delivery Fee : Free
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto py-10">
+                <hr class="border-dashed border-1 h-0">
+                <div class="space-y-3 text-center py-5">
+                    <h2 class="text-xl md:text-4xl text-black font-extrabold">
+                        Clients Question
+                    </h2>
+                    <p class="text-sm md:text-base font-medium p-black max-w-[607px] mx-auto">
+                        Unlock strategic plays and tailored solutions with personalized insights for our esteemed hockey clients' success.
+                    </p>
+                </div>
+                <hr class="border-dashed border-1 h-0">
+                <div class="border-2 p-5 mt-10 rounded-xl">
+                    <div class="flex flex-col lg:flex-row justify-around  gap-10">
+                        <img src="Images/11.png" />
+                        <div class="space-y-5">
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" checked="checked" />
+                                <div class="collapse-title text-xl font-extrabold">
+                                    Our Equipment
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Top-tier equipment for optimal performance, durability, and style, elevating your
+                                        sports experience to new heights of excellence </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-extrabold">
+                                    Hockey Training
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Intensive hockey training: skill refinement, strategic drills, and fitness
+                                        regimens for peak athletic performance on the ice </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-extrabold">
+                                    Private Lessons
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Personalized hockey coaching: private lessons tailored to refine skills, enhance
+                                        strategies, and accelerate individual player development. </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-extrabold">
+                                    Ski Touring
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Embark on exhilarating ski touring adventures, exploring breathtaking landscapes
+                                        and enjoying the thrill of backcountry skiing with expert guidance </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-extrabold">
+                                    Booking
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Secure your spot with easy booking, ensuring a seamless and hassle-free
+                                        experience for your upcoming adventures. </p>
+                                </div>
+                                <hr>
+                            </div>
+                            <div class="collapse collapse-plus">
+                                <input type="radio" name="my-accordion-3" />
+                                <div class="collapse-title text-xl font-extrabold">
+                                    Pricings
+                                </div>
+                                <div class="collapse-content">
+                                    <p>Transparent pricings, offering value for exceptional experiences tailored to your
+                                        preferences and needs. Explore and choose your ideal package today</p>
+                                </div>
+                                <hr>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto py-10">
+                <hr class="border-dashed border-1 h-0">
+                <div class="space-y-3 text-center py-10">
+                    <h2 class="text-xl md:text-4xl text-black font-extrabold">
+                        Get In Touch
+                    </h2>
+                    <p class="text-sm md:text-base font-medium p-black max-w-[607px] mx-auto">
+                        Reach out to us easily. Connect and let's discuss your needs, questions, or any inquiries. We're
+                        here for you!
+                    </p>
+                </div>
+                <hr class="border-dashed border-1 h-0">
+                <div class="border-2 rounded-xl flex items-center gap-10 p-5 lg:p-10 flex-col lg:flex-row mt-10">
+                    <div class="space-y-5">
+                        <div class="p-black bg-lime-50 py-10 px-7 rounded-lg">
+                            <img class="mb-5" src="Images/Group 1171275317.png" alt="">
+                            Phone Number : <br>
+                            <strong class="text-black">
+                                (+62) 123-321-543
+                            </strong>
+                        </div>
+                        <div class="p-black bg-yellow-50 py-10 px-7 rounded-lg">
+                            <img class="mb-5" src="Images/Group 1171275318.png" alt="">
+                            Email :
+                            <br>
+                            <strong class="text-black">
+                                hockeys@support.com
+                            </strong>
+                        </div>
+                        <div class="p-black bg-slate-100 py-10 px-7 rounded-lg">
+                            <img class="mb-5" src="Images/Group 1171275321.png" alt="">
+                            Location :
+                            <br>
+                            <strong class="text-black">
+
+                                152/1 Mohakhali Wireless Gate
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="flex-1">
+                        <div class="card shrink-0 w-full">
+                            <form class="card-body p-0">
+                                <div class="flex gap-5 flex-col lg:flex-row">
+                                    <div class="form-control flex-1">
+                                        <label class="label">
+                                            <span class="label-text lg:text-xl font-bold">Your Name</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Your Name" class="input bg-base-200"
+                                            required />
+                                    </div>
+                                    <div class="form-control flex-1">
+                                        <label class="label">
+                                            <span class="label-text lg:text-xl font-bold">Your Email</span>
+                                        </label>
+                                        <input type="email" placeholder="Enter Your Email" class="input bg-base-200"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="flex gap-5 flex-col lg:flex-row">
+                                    <div class="form-control flex-1">
+                                        <label class="label">
+                                            <span class="label-text lg:text-xl font-bold">Your Phone</span>
+                                        </label>
+                                        <input type="number" placeholder="Enter Your Phone" class="input bg-base-200"
+                                            required />
+                                    </div>
+                                    <div class="form-control flex-1">
+                                        <label class="label">
+                                            <span class="label-text lg:text-xl font-bold">Subject</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Your Subject" class="input bg-base-200"
+                                            required />
+                                    </div>
+                                </div>
+                                <div class="form-control flex-1">
+                                    <label class="label">
+                                        <span class="label-text lg:text-xl font-bold">Message</span>
+                                    </label>
+
+                                    <textarea class=" p-5 rounded-lg bg-base-200" name=""
+                                        placeholder="Write your message" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button class="btn btn-error text-white">Send Message</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container mx-auto py-10">
+                <div class="space-y-3 text-center py-5 bg-base-200">
+                    <h2 class="text-xl md:text-2xl text-black font-extrabold">
+                        Social Media
+                    </h2>
+                    <div class="flex justify-center items-center gap-5 text-2xl ">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="bg-black text-white p-5 lg:p-12 mt-12">
         <div class="container">
